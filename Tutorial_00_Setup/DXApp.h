@@ -30,6 +30,11 @@ protected:
     std::string     m_AppTitle;     // El string que será mostrado en la barra del título.
     DWORD           m_WndStyle;     // Será el estilo de mi ventana. Es un unsigned long.
 
+protected:
+
+    //INITIALIZE WIN32 WINDOW
+    bool InitWindow()
+
 
 };
 
