@@ -19,7 +19,7 @@ DXApp::DXApp(HINSTANCE hInstance)
     m_hAppWnd = nullptr;
     m_ClientWidth = 800;
     m_ClientHeight = 600;
-    m_AppTitle = "TUTORIAL 01 - DIRECTX SETUP";
+    m_AppTitle = "TUTORIAL 02 - DIRECTX ERROR HANDLING";
     m_WndStyle = WS_OVERLAPPEDWINDOW;
     g_pApp = this;
 
