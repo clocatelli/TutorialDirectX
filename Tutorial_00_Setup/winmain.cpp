@@ -1,4 +1,7 @@
+#include <memory>
+
 #include "DXApp.h"
+#include "SpriteBatch.h"        // DEL TOOLKIT DE DIRECTX
 
 class TestApp : public DXApp
 {
@@ -11,6 +14,8 @@ public:
     void Render(float dt) override;
 
 private:
+
+    std::unique_ptr<DirectX::SpriteBatch> spriteBatch;
 
 };
 
@@ -28,6 +33,8 @@ bool TestApp::Init()
     if (!DXApp::Init())
         return false;
 
+    spriteBatch.reset(new DirectX::SpriteBatch(m_pImmediateContext));
+
     return true;
 }
 
@@ -39,6 +46,14 @@ void TestApp::Update(float dt)
 void TestApp::Render(float dt)
 {
     m_pImmediateContext->ClearRenderTargetView(m_pRenderTargetView, DirectX::Colors::Purple);
+
+    spriteBatch->Begin();
+
+    // DRAW SPRITE, FONTS, ETC.
+    
+
+    spriteBatch->End();
+
 
     HR(m_pSwapChain->Present(0, 0));
 }
