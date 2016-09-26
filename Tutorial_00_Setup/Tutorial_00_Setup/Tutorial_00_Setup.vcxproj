@@ -65,6 +65,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\DXApp.h" />
+    <ClInclude Include="DXUtil.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\DXApp.cpp" />
