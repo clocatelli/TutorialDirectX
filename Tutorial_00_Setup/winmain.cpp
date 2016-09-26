@@ -1,5 +1,4 @@
 #include "DXApp.h"
-#include <DirectXColors.h>
 
 class TestApp : public DXApp
 {
@@ -41,7 +40,7 @@ void TestApp::Render(float dt)
 {
     m_pImmediateContext->ClearRenderTargetView(m_pRenderTargetView, DirectX::Colors::Purple);
 
-    m_pSwapChain->Present(0, 0);
+    HR(m_pSwapChain->Present(0, 0));
 }
 
 int WINAPI WinMain(__in HINSTANCE hInstance, __in_opt HINSTANCE hPrevInstance, __in LPSTR lpCmdLine, __in int nShowCmd)

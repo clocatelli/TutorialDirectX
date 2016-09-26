@@ -47,6 +47,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -64,12 +65,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\DXApp.h" />
+    <ClInclude Include="DXApp.h" />
+    <ClInclude Include="dxerr.h" />
     <ClInclude Include="DXUtil.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\DXApp.cpp" />
-    <ClCompile Include="..\winmain.cpp" />
+    <ClCompile Include="DXApp.cpp" />
+    <ClCompile Include="dxerr.cpp" />
+    <ClCompile Include="winmain.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

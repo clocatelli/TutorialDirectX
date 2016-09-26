@@ -3,7 +3,7 @@
 //..........................// Por ejemlo no agrega recursos de criptografia, networking, etc
 #include <Windows.h>
 #include <string>
-#include "DXUtil/DXUtil.h"
+#include "DXUtil.h"
 
 class DXApp
 {

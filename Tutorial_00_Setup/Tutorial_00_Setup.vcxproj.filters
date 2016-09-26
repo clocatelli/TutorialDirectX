@@ -9,27 +9,36 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="DXUtil">
       <UniqueIdentifier>{7f5be0ff-30cd-4af7-b361-3cbe93b25d5f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="DXError">
+      <UniqueIdentifier>{1f0c60c9-0f3f-4543-be2a-625b05309d4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\DXApp.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="DXUtil.h">
       <Filter>DXUtil</Filter>
     </ClInclude>
+    <ClInclude Include="dxerr.h">
+      <Filter>DXError</Filter>
+    </ClInclude>
+    <ClInclude Include="DXApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\DXApp.cpp">
+    <ClCompile Include="dxerr.cpp">
+      <Filter>DXError</Filter>
+    </ClCompile>
+    <ClCompile Include="winmain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\winmain.cpp">
+    <ClCompile Include="DXApp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
