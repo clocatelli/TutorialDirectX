@@ -16,7 +16,7 @@ public:
     //FRAMEWORK METHOS
     virtual bool Init();
     virtual void Update(float dt) = 0; // Se les agrega un delta t, dado que serán actualizados en determinados momentos
-    virtual void Render(float dt) = 0; // Acá sucede lo mismo
+    virtual void Render(float dt) = 0; // Acá sucede lo mismo. 
     virtual LRESULT MsgProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam); // Este método es muy importante, es el Windows Message
     //..........................................................................// procedure
 
@@ -33,9 +33,10 @@ protected:
 protected:
 
     //INITIALIZE WIN32 WINDOW
-    bool InitWindow()
+    bool InitWindow();
 
 
 };
+
 
  
