@@ -30,6 +30,12 @@
     <ClInclude Include="DXApp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="IElement2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="dxerr.cpp">
@@ -39,6 +45,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DXApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUtil.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

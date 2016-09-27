@@ -70,10 +70,14 @@
     <ClInclude Include="DXApp.h" />
     <ClInclude Include="dxerr.h" />
     <ClInclude Include="DXUtil.h" />
+    <ClInclude Include="IElement2D.h" />
+    <ClInclude Include="Sprite.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DXApp.cpp" />
     <ClCompile Include="dxerr.cpp" />
+    <ClCompile Include="DXUtil.cpp" />
+    <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="winmain.cpp" />
   </ItemGroup>
   <ItemGroup>
